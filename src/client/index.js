@@ -1,11 +1,19 @@
+import {passDataToDOM} from './js/passDataToDOM';
+import {checkURL} from './js/checkURL';
+import {postMethod} from './js/methods';
 import {handleSubmit} from './js/handleSubmit';
 import './styles/style.sass';
-////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 window.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('form');
     form.addEventListener('submit', (event) => {
-        handleSubmit(event)
+        return Client.handleSubmit(event)
     });
 });
 ////////////////////////////////////////////////////////////////////////
-export {handleSubmit}
+export {
+    passDataToDOM,
+    checkURL,
+    postMethod,
+    handleSubmit
+}

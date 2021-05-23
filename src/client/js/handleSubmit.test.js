@@ -5,6 +5,6 @@ describe('Test, the function "handleSubmit()" should exist', () => {
         expect(handleSubmit).toBeDefined();
     });
     test('It should return true', async () => {
-        expect(handleSubmit).toBe('function');
+        expect(typeof handleSubmit).toBe('function');
     });
 });
